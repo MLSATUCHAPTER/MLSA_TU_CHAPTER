@@ -1,0 +1,876 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: #203A61; */
+  background: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* Navbar Styling */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 16vh;
+  position: sticky;
+  top: 0px;
+  /* this is needed for 'sticky' value to work accordingly */
+  z-index: 4;
+  background: #203A61;
+}
+
+.logo img {
+  width: 33vw;
+}
+
+.links {
+  margin-bottom: 1vh;
+}
+
+.links ul {
+  margin-bottom: 0;
+}
+
+.links li {
+  list-style: none;
+  display: inline-block;
+}
+
+.links li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 1.5em;
+  width: 10vw;
+  min-width: 5.4em;
+  height: 6vh;
+  margin: 0px 1.5vw;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 500;
+  transition: transform 0.1s ease-in;
+}
+
+.links li a:hover {
+  transform: translateY(-0.3em);
+  color: black;
+}
+
+/* know us section styling */
+
+.heading-main {
+  padding-top: 0.5em;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2D2D83;
+  display: block;
+}
+
+.know {
+  background: white;
+  height: auto;
+}
+
+.knowUs img {
+  width: 60%;
+  /* height: 60vh; */
+  margin: auto;
+  margin-bottom: 3vh;
+  display: block;
+  position: relative;
+  left: -6em;
+}
+
+.space-img {
+  margin: 6em 0;
+  /* padding-bottom: 3em; */
+  display: flex;
+  justify-content: center;
+}
+
+.space {
+  margin-right: 13em;
+}
+
+.space img {
+  width: 20vw;
+  height: 36vh;
+  border-radius: 6em;
+  box-shadow: -0.7em 0 0 0 #C4C4C4;
+  display: block;
+}
+
+.sanddunes img {
+  width: 49vw;
+  height: 36vh;
+  border-radius: 6em;
+}
+
+/* Statistics Styling */
+
+.info-mission {
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(to right, #114357, #2980b9);
+  color: white;
+  padding: 1.4em 0;
+}
+
+.year,
+.events-num,
+.info-space {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3em;
+}
+
+/* faculty Mentor Styling */
+
+.family {
+  text-align: center;
+  background: white;
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 1.2em 0;
+}
+
+
+/* Container and Faculty Styling */
+.faculty {
+  font-size: 2em; /* Adjusted for readability on mobile */
+  font-weight: 600;
+  background: white;
+  padding-bottom: 0.5em;
+  padding-top: 0.2em;
+  text-align: center;
+}
+
+/* Main Container */
+.fac-mentor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 1em;
+  max-width: 100%;
+}
+
+/* Image Container */
+.fac-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+/* Circular Image Styling */
+.fac-face {
+  width: 25vw;
+  height: 25vw;
+  max-width: 200px; /* Ensures it doesn’t get too large on desktops */
+  max-height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.fac-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps the image centered and fills the circular frame */
+}
+
+/* Description and Socials */
+.fac-desc {
+  text-align: center;
+}
+
+.fac-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.fac-info {
+  font-size: 1em;
+  color: gray;
+  margin-top: 0.5em;
+  padding: 0 1em; /* Adds padding for readability on smaller screens */
+}
+
+.fac-socials img {
+  width: 25px;
+  height: 25px;
+  margin: 0 0.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { /* Tablet and smaller screens */
+  .fac-mentor {
+    padding: 1em;
+  }
+  
+  .fac-face {
+    width: 40vw;
+    height: 40vw;
+    max-width: 150px; /* Smaller max size for tablet */
+    max-height: 150px;
+  }
+
+  .faculty {
+    font-size: 1.5em;
+  }
+
+  .fac-name {
+    font-size: 1.2em;
+  }
+
+  .fac-info {
+    font-size: 0.9em;
+  }
+
+  .fac-socials img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) { /* Mobile screens */
+  .fac-mentor {
+    padding: 1em;
+  }
+
+  .fac-face {
+    width: 50vw;
+    height: 50vw;
+    max-width: 120px; /* Smaller max size for mobile */
+    max-height: 120px;
+  }
+
+  .faculty {
+    font-size: 1.2em;
+  }
+
+  .fac-name {
+    font-size: 1em;
+  }
+
+  .fac-info {
+    font-size: 0.8em;
+  }
+
+  .fac-socials img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faculty {
+  font-size: 8em;
+  font-weight: 600;
+  background: white;
+  padding-bottom: 1em;
+  padding-top: 0.2em;
+  text-align: center;
+}
+
+.fac-mentor {
+  display: flex;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fac-photo {
+  display: flex;
+  flex-direction: column;
+}
+
+.fac-face {
+  width: 25vw;
+  height: 26vw;
+  border-radius: 21vw;
+  overflow: hidden;
+}
+
+.fac-face img {
+  width: 100%;
+}
+
+.fac-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.fac-socials a img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 0.75em;
+}
+
+.fac-desc {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fac-name {
+  font-size: 3.5em;
+  font-weight: 700;
+  padding: 0.2em 0;
+  padding-top: 1em;
+}
+
+.fac-info {
+  font-size: 2em;
+}
+
+/* student mentor styling */
+
+.mentor {
+  font-size: 4em;
+  font-weight: 600;
+  text-align: center;
+  background: white;
+  padding: 1em 0;
+  margin-top: 0.6em;
+
+}
+
+.stud-mentor {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  justify-content: center;
+  padding-bottom: 5em;
+}
+
+
+
+
+.ambassador-title {
+  font-size: 1em;
+  font-weight: normal;
+  color: gray;
+  text-align: center;
+  margin-top: 0.9em; /* Minimal space between name and title */
+}
+
+.stud {
+  width: 25vw;
+  height: 40vh;
+  margin: 1em 5em;
+}
+
+.stud-pic {
+  height: 19em;
+  width: 18em;
+  border-radius: 18em;
+  background: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.stud-pic img {
+  height: 19em;
+  width: 18em;
+  border-radius: 18em;
+  margin: auto;
+  object-fit: cover;
+}
+
+.stud-pic::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.65);
+  height: 19em;
+  width: 18em;
+  border-radius: 18em;
+  position: absolute;
+  top: -100%;
+  left: 0em;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.55s ease;
+}
+
+.stud-pic:hover::after {
+  opacity: 1;
+  top: 0;
+}
+
+.stud-pic:hover .stud-social {
+  top: 40%;
+}
+
+.stud-social {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+  top: -50%;
+  margin-bottom: 0;
+  padding: 0;
+  transition: all 0.55s ease;
+}
+
+.stud-social li {
+  display: inline-block;
+}
+
+.stud-social li a {
+  text-decoration: none;
+}
+
+.stud-social li a i {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  margin: 0 5px;
+  font-size: 4em;
+  color: rgb(255, 255, 255);
+}
+
+.stud-name {
+  margin-top: em;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 700;
+  color: #203A61;
+
+}
+
+.stud-quote {
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: 700;
+  color: #4285F4;
+}
+
+/* team members styling */
+
+/* .team-name{
+  background: none;
+  padding-top: 0.5em;
+  font-size: 4.5em;
+} */
+
+.stud-team {
+  background: none;
+  padding-bottom: 0;
+}
+
+.exec {
+  margin: 2em 2em;
+  height: 33em;
+  width: 21vw;
+}
+
+.exec-pic {
+  border-radius: 0;
+  height: 25em;
+  width: 20em;
+  margin: auto;
+  background: white;
+}
+
+.exec-pic img {
+  border-radius: 0;
+  height: 25em;
+  width: 20em;
+  object-fit: cover;
+}
+
+.exec-name,
+.exec-title {
+  color: white;
+}
+
+.exec-title {
+  text-align: center;
+}
+
+.slider {
+  background: #203A61;
+}
+
+/* carousel styling */
+
+.carousel {
+  background: #203A61;
+  overflow: visible;
+  padding-top: 1em;
+}
+
+.carousel-control-prev {
+  left: 8em;
+  width: auto;
+}
+
+.carousel-control-next {
+  right: 8em;
+  width: auto;
+}
+
+/* carousel slide sytling */
+
+.team-name {
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 0.6em;
+  font-weight: 500;
+}
+
+.team {
+  width: fit-content;
+  margin: auto;
+  margin-top: 3em;
+  display: flex;
+}
+
+.member {
+  /* border: 2px solid red; */
+  margin: 1em 2em;
+  width: 14vw;
+  height: 47vh;
+  display: inline-block;
+  position: relative;
+}
+
+.member::after {
+  position: absolute;
+  content: "";
+  width: 14vw;
+  height: 38vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
+  /* background: rgba(0, 0, 0, 0.65); */
+  opacity: 0.7;
+  top: 0;
+  transition: all 0.6s ease;
+}
+
+.member:hover::after {
+  opacity: 0.4;
+  transform: translateY(-5px);
+}
+
+.odd {
+  /* margin-bottom: 4em; */
+}
+
+.even {
+  /* margin-top: 4em; */
+}
+
+.member img {
+  object-fit: cover;
+  width: 14vw;
+  height: 38vh;
+  transition: all 0.6s ease;
+  /* box-shadow: -2px -2px 2px rgb(255, 255, 255); */
+}
+
+.member:hover img {
+  transform: translateY(-5px);
+  border-bottom: 0;
+}
+
+.mem-desc {
+  height: 7vh;
+  position: relative;
+  transition: all 0.6s ease 0.2s;
+  transform: translateY(-10px);
+  opacity: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.member:hover .mem-desc {
+  transform: translateY(-19px);
+  opacity: 0.92;
+}
+
+.mem-name {
+  font-size: 1.8em;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+.mem-socials {
+  height: 3vh;
+}
+
+.mem-socials ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mem-socials ul li {
+  display: inline-block;
+}
+
+.mem-socials ul li a {
+  text-decoration: none;
+}
+
+.mem-socials ul li a i {
+  font-size: 2.5em;
+  color: white;
+  margin-right: 0.3em;
+}
+
+
+/* .member::before{
+  width: 0.2em;
+  height: 14%;
+  position: absolute;
+  background-color: #888888;
+  content: "";
+  left: 50%;
+  top: -6%;
+  z-index: 2;
+  transform: scale(0);
+  transform-origin:-50% 0;
+  transition: all 0.6s ease;
+}
+
+.member:hover::before{
+  transform: scale(1);
+} */
+
+
+/* styling for footer section */
+
+.socials i {
+  color: white;
+  font-size: 4.2rem;
+}
+
+.socials {
+  display: flex;
+  width: 16vw;
+  margin: 7vh auto 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+.footer {
+  text-align: center;
+  width: fit-content;
+  margin: 2em auto 0 auto;
+  padding-bottom: 2em;
+}
+
+.footer span {
+  font-size: 1.3em;
+}
+
+
+/* Base styles for icons */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials a {
+  font-size: 24px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.socials a .fa-whatsapp {
+  color: #25D366; /* WhatsApp green */
+}
+
+.bottom .socials a .fa-microsoft {
+  color: #F25022; /* Microsoft orange-red */
+}
+
+.socials a .fa-linkedin {
+  color: #0A66C2; /* LinkedIn blue */
+}
+
+/* Hover effects */
+.socials a:hover .fa-whatsapp {
+  color: #128C7E;
+}
+
+.bottom .socials a:hover .fa-microsoft {
+  color: #E74C3C; /* Slightly darker red for Microsoft hover */
+}
+
+.socials a:hover .fa-linkedin {
+  color: #004182;
+}
+
+.microsoft-icon {
+  width: 34px;
+  height: 35px;
+  transition: transform 0.3s;
+}
+
+.microsoft-icon:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .socials a {
+      font-size: 20px; /* Reduce size on tablets */
+      margin: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .socials {
+      flex-direction: column;
+      gap: 10px; /* Increase spacing for smaller screens */
+  }
+
+  .socials a {
+      font-size: 18px; /* Reduce size further on small screens */
+      margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom {
+  padding-top: 2em;
+  background: linear-gradient(180deg, rgba(92, 45, 145, 0) 0%, #0E0E0E 80.21%);
+}
+
+/* old styling */
+
+.container1 {
+  padding-top: 30px;
+
+}
+
+/* .member{
+    clip-path: circle();
+} */
+.item1 {
+  padding-left: 360px;
+}
+
+.item2 {
+  padding-left: 85px;
+  padding-top: 30px;
+
+}
+
+.item4 {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.item5 {
+  padding-left: 130px;
+
+}
+
+.item7 {
+  padding-left: 400px;
+
+}
+
+.item8 {
+  padding-left: 60px;
+  padding-right: 0px;
+}
+
+.studentmentor {
+  padding-left: 85px;
+  padding-top: 30px;
+
+}
+
+.container4 {
+  padding-left: 125px;
+}
+
+.container7 {
+  padding-left: 370px;
+}
+
+.item9 {
+  padding-left: 25px;
+}
+
+.item10 {
+  padding-top: -1000px;
+  padding-left: 550px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+  align-items: center;
+}

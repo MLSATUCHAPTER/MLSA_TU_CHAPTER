@@ -1,0 +1,57 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16vh;
+    position: sticky;
+    top:0px; /* this is needed for 'sticky' value to work accordingly */
+    z-index: 2;
+    background: #203A61;
+}
+
+.logo img{
+    width: 33vw;
+}
+
+.links{
+    margin-bottom: 1vh;
+}
+
+.links ul{
+    margin-bottom: 0rem;
+}
+
+.links li{
+    list-style: none;
+    display: inline-block;
+}
+
+.links li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 1.5em;
+    width: 10vw;
+    min-width: 5.4em;
+    height: 6vh;
+    margin: 0px 1.5vw;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 500;
+    transition: transform 0.1s ease-in;
+    
+}
+
+.links li a:hover{
+    transform: translateY(-0.3em);
+    color: black;
+}
+.black-text{
+    color: black;
+    text-decoration: none;
+}
+
+
+

@@ -1,0 +1,110 @@
+
+
+
+
+
+/* Base styles for icons */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .socials a {
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+  
+  .socials a .fa-whatsapp {
+    color: #25D366; /* WhatsApp green */
+  }
+  
+  .bottom .socials a .fa-microsoft {
+    color: #F25022; /* Microsoft orange-red */
+  }
+  
+  .socials a .fa-linkedin {
+    color: #0A66C2; /* LinkedIn blue */
+  }
+  
+  /* Hover effects */
+  .socials a:hover .fa-whatsapp {
+    color: #128C7E;
+  }
+  
+  .bottom .socials a:hover .fa-microsoft {
+    color: #E74C3C; /* Slightly darker red for Microsoft hover */
+  }
+  
+  .socials a:hover .fa-linkedin {
+    color: #004182;
+  }
+  
+  .microsoft-icon {
+    width: 34px;
+    height: 35px;
+    transition: transform 0.3s;
+  }
+  
+  .microsoft-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  
+  
+  
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .socials a {
+        font-size: 20px; /* Reduce size on tablets */
+        margin: 0 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .socials {
+        flex-direction: column;
+        gap: 10px; /* Increase spacing for smaller screens */
+    }
+  
+    .socials a {
+        font-size: 18px; /* Reduce size further on small screens */
+        margin: 0;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    text-align: center;
+    width: fit-content;
+    margin: 2em auto 0 auto;
+    padding-bottom: 2em;
+}
+
+.footer span{
+    font-size: 1.3em;
+}
+
+.bottom{
+    background: linear-gradient(180deg, rgba(92, 45, 145, 0) 0%, #0E0E0E 80.21%);
+    font-size: 10px;
+    padding-top: 5em;
+}
+
+.white-text{
+    color:white;
+}

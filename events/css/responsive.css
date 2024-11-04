@@ -1,0 +1,185 @@
+@media screen and (max-width: 450px) {
+    .events {
+        padding: 12em 0 18em 0;
+    }
+
+    .landing-page {
+        padding-bottom: 0em;
+        padding-top: 3em;
+    }
+
+    .page-desc::after {
+        bottom: 54vh;
+        width: 63vw;
+        height: 0.3vh;
+    }
+
+    .landing-page img {
+        display: block;
+        object-fit: contain;
+        margin: auto;
+        width: 33vw;
+        height: 100%;
+        top: 0em;
+        left: 0em;
+    }
+
+    #img-1 {
+        height: 30vh;
+        width: 80vw;
+        position: relative;
+    }
+
+    #img-2,
+    #img-3 {
+        display: none;
+    }
+
+    .container {
+        padding-bottom: 5em;
+    }
+
+    .page-desc {
+        padding: 1rem 11rem 6rem 11rem;
+        font-size: 2.6em;
+    }
+
+    /* .events{
+        padding: 10em 0;
+        height: 40vh;
+    } */
+
+    .event-details {
+        width: 90%;
+        word-spacing: normal;
+        text-align: left;
+    }
+
+    .past-events {
+        height: 120rem;
+    }
+
+    .past-photo {
+        /* object-fit: cover; */
+        height: 48rem;
+        width: 38rem;
+    }
+
+    .heading {
+        padding: 0;
+        padding-bottom: 7rem;
+        height: 6vh;
+    }
+
+    .heading h2 {
+        font-size: 6rem;
+    }
+
+    .card {
+        zoom: 1.2;
+    }
+
+    .past-heading {
+        font-size: 6rem;
+    }
+
+    .past-title {
+        font-size: 4.1rem;
+    }
+
+    .past-card {
+        zoom: 1.2;
+        height: auto;
+    }
+
+    .socials {
+        width: 24vw;
+        margin-top: 4vw;
+        font-size: 4px;
+    }
+
+    .icon img {
+        width: 5em;
+        height: 5em;
+    }
+
+    .socials a img {
+        width: 3.2em;
+        height: 3.2em;
+    }
+
+    .prev,
+    .next {
+        margin-top: 52px;
+    }
+
+    .main-heading {
+        font-size: 4em;
+        border: none;
+        outline: 0;
+    }
+
+    .page-desc {
+        font-size: 3em;
+    }
+
+    .event-desc {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .event-details {
+        padding-top: 2vh;
+    }
+
+    .event-poster {
+        width: 70vw;
+    }
+
+    .poster {
+        justify-content: center;
+        width: 70vw;
+        padding-top: 0;
+    }
+
+    .event-name h2 {
+        font-size: 6rem;
+        font-weight: 600;
+    }
+
+    .event-info {
+        width: 85vw;
+        padding-top: 2vh;
+    }
+
+    .event-details pre {
+        font-size: 3.5rem;
+    }
+
+    .cta {
+        margin-top: 8em;
+    }
+
+    .register {
+        border-radius: 5rem;
+        width: 50vw;
+        height: 2.5em;
+        font-size: 3.5em;
+    }
+
+    .register-btn_text {
+        font-size: 3.5rem;
+    }
+
+    .past-event-poster figcaption {
+        width: 50vw;
+        font-size: 3rem;
+    }
+
+    .bottom {
+        padding-top: 1em;
+    }
+
+
+}

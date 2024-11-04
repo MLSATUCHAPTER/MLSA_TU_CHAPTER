@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-weight: normal;
+    background: #203A61;
+}
+
+/* body::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, #1e3a61 0%, #113860 20%, #052a4a 55%, #041227 80%, #0d0d0d 100%);
+    width: 100%;
+    height: 186vh;
+    z-index: -1;
+} */
+
+/* Navbar */
+
+
+/* styling for navbar */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16vh;
+    position: sticky;
+    top:0px; /* this is needed for 'sticky' value to work accordingly */
+    z-index: 2;
+    background: #203A61;
+}
+
+.logo img{
+    width: 33vw;
+}
+
+.links{
+    margin-bottom: 1vh;
+}
+
+.links li{
+    list-style: none;
+    display: inline-block;
+}
+
+.links li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 1.5em;
+    width: 10vw;
+    min-width: 5.4em;
+    height: 6vh;
+    margin: 0px 1.5vw;
+    text-align: center;
+    /* padding-top: 0.9vh; */
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 500;
+    transition: transform 0.1s ease-in;
+}
+
+.links li a:hover{
+    transform: translateY(-0.3em);
+    color: black;
+}
+
+.black-text{
+    color: black;
+    text-decoration: none;
+}
+
+/* ------------- */
+
+/* .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 46vw;
+}
+
+.list{
+    margin-bottom: 1vh;
+}
+
+.list ul{
+    display: flex;
+    list-style: none;
+}
+
+.list ul li a{
+    color: black;
+    display: inline-block;
+    background: white;
+    border-radius: 40em;
+    width: 12vw;
+    height: 6vh;
+    margin: 0px 1vw;
+    text-align: center;
+    padding-top: 0.9vh;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.list ul li a:hover{
+    background-color: gray;
+} */
+
+.contactus{
+    text-align: center;
+    font-weight: 700;
+    /* font-size: 65px; */
+    font-size: 50px;
+    color: white;
+    padding-bottom: 80px;
+}
+
+/* Container */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    margin-right: 40px;
+}
+
+.right{
+    margin-left: 40px;
+}
+
+.left iframe{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.gmap_canvas{
+    height: 400px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.mapouter{
+    height: 400px;
+    width: 400px;
+}
+.details{
+    margin-top: 1em;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+}
+
+.address i{
+    color: white;
+    margin-top: 30px;
+    margin-right: 17px;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+    font-size: 32px;
+}
+
+.detail-text{
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+    /* margin-top: 20px; */
+}
+
+.call{
+    display: flex;
+    align-items: center;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+}
+
+.call img{
+    height: 32px;
+    width: 32px;
+    margin-top: 20px;
+    margin-right: 17px;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+}
+
+.mail img{
+    height: 32px;
+    width: 32px;
+    margin-top: 15px;
+    margin-right: 17px;
+    /* margin-bottom: 20px; */
+    padding: 5px 5px;
+}
+
+footer{
+    padding-top: 100px;
+    /* position: absolute; */
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 16vw;
+}
+
+.socials i{
+    color: white;
+    font-size: 4.2rem;
+}
+
+
+
+
+/* Base styles for icons */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .socials a {
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none;
+  }
+  
+  .socials a .fa-whatsapp {
+    color: #25D366; /* WhatsApp green */
+  }
+  
+  .bottom .socials a .fa-microsoft {
+    color: #F25022; /* Microsoft orange-red */
+  }
+  
+  .socials a .fa-linkedin {
+    color: #0A66C2; /* LinkedIn blue */
+  }
+  
+  /* Hover effects */
+  .socials a:hover .fa-whatsapp {
+    color: #128C7E;
+  }
+  
+  .bottom .socials a:hover .fa-microsoft {
+    color: #E74C3C; /* Slightly darker red for Microsoft hover */
+  }
+  
+  .socials a:hover .fa-linkedin {
+    color: #004182;
+  }
+  
+  .microsoft-icon {
+    width: 34px;
+    height: 35px;
+    transition: transform 0.3s;
+  }
+  
+  .microsoft-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  
+  
+  
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .socials a {
+        font-size: 20px; /* Reduce size on tablets */
+        margin: 0 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .socials {
+        flex-direction: column;
+        gap: 10px; /* Increase spacing for smaller screens */
+    }
+  
+    .socials a {
+        font-size: 18px; /* Reduce size further on small screens */
+        margin: 0;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+background: linear-gradient(180deg, #203A61 0%, #0E0E0E 80.21%);
+}
+
+.footer{
+    text-align: center;
+    width: fit-content;
+    margin: 2em auto 0 auto;
+    padding-bottom: 2em;
+    /* position: absolute;
+    bottom: 0px; */
+}
+
+.footer span{
+    font-size: 1.3em;
+}
+
+.white-text{
+    color: white;
+}

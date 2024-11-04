@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+body {
+    /* background: linear-gradient(180deg, #1e3a61 0%, #113860 20%, #052a4a 55%, #041227 80%, #0d0d0d 100%); */
+    background: #203A61;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+}
+
+html {
+    font-size: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 18vh; */
+    height: 16vh;
+    position: sticky;
+    top: 0px;
+    /* this is needed for 'sticky' value to work accordingly */
+    z-index: 2;
+    background: #203A61;
+}
+
+.logo img {
+    /* width: 46vw; */
+    width: 33vw;
+    /* height: 21vh; */
+}
+
+.links {
+    margin-bottom: 1vh;
+}
+
+.links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.links ul {
+    margin-bottom: 0;
+}
+
+.links li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    /* border-radius: 40em; */
+    border-radius: 1.5em;
+    /* width: 12vw; */
+    width: 10vw;
+    min-width: 5.4em;
+    /* height: 7vh; */
+    height: 6vh;
+    /* margin: 0px 1vw; */
+    margin: 0px 1.5vw;
+    text-align: center;
+    /* padding-top: 0.9vh; */
+    text-decoration: none;
+    /* font-size: 2.5em; */
+    font-size: 2em;
+    font-weight: 500;
+    transition: transform 0.1s ease-in;
+
+}
+
+.links li a:hover {
+    transform: translateY(-0.3em);
+    color: black;
+}
+
+.heading {
+    /* font-size: 7em; */
+    font-size: 5em;
+    text-align: center;
+    /* margin-top: -1vh; */
+    font-weight: 700;
+}
+
+.heading p {
+    margin-bottom: 0;
+}
+
+.about-img-1 {
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    margin-bottom: 4vh;
+    display: block;
+    background: url("../aboutus_assets/about us-4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.desc {
+    width: 54%;
+    /* font-size: 2.7em; */
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding-top: 1em
+}
+
+.desc::after {
+    position: absolute;
+    width: 65%;
+    height: 0.6vh;
+    background: white;
+    content: "";
+    bottom: -6vh;
+    left: 17.5%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18vh;
+    background: white;
+    /* height: 80v; */
+}
+
+.card {
+    width: 90vw;
+    /* border-radius: 3.7em; */
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 4em;
+    margin: 5em 0;
+    /* padding-top: 2em; */
+}
+
+.vis {
+    margin-bottom: 10em;
+    margin-top: 0;
+    /* background: #00006A; */
+
+}
+
+.vis-text {
+    width: 38vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vis-img img {
+    width: 39vw;
+}
+
+.desc-1 {
+    /* font-size: 2.0em; */
+    font-size: 2em;
+    text-align: justify;
+    margin-top: 0.5em;
+}
+
+.heading-1 {
+    margin-bottom: 0.2em;
+    /* font-size: 10em; */
+    font-size: 5em;
+}
+
+
+.heading-contact {
+    margin: auto;
+    font-size: 5em;
+    width: fit-content;
+    margin-top: 20vh;
+    position: relative;
+}
+
+.heading-contact::after {
+    content: "";
+    width: 50%;
+    height: 0.6vh;
+    background: white;
+    position: absolute;
+    bottom: -1.8vh;
+    left: 25%;
+}
+
+.contactus {
+    display: flex;
+    justify-content: space-between;
+    width: 66vw;
+    margin: auto;
+    margin-top: 10em;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    align-items: center;
+}
+
+.icon img {
+    /* width: 7em;
+    height: 7em; */
+    width: 6em;
+    height: 6em;
+    margin-bottom: 2.5vh;
+}
+
+.telephone img {
+    transform: rotate(-54.63deg);
+}
+
+.icon-name {
+    font-size: 1.3em;
+}
+
+
+
+/* Base styles for the social icons container */
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.socials a {
+    font-size: 24px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+/* Individual icon colors */
+.socials a .fa-whatsapp {
+    color: #25D366; /* WhatsApp green */
+}
+
+.socials a .fa-linkedin {
+    color: #0A66C2; /* LinkedIn blue */
+}
+
+/* Custom Microsoft icon styling */
+.microsoft-icon {
+    width: 24px; /* Adjusted size to match other icons */
+    height: 24px; /* Make it a square for consistency */
+    transition: transform 0.3s;
+    object-fit: cover; /* Ensures image fills the space proportionally */
+    vertical-align: middle; /* Aligns with Font Awesome icons */
+    margin-top: -1px; /* Adjust for perfect alignment */
+}
+
+/* Hover effects */
+.socials a:hover .fa-whatsapp {
+    color: #128C7E;
+}
+
+.socials a:hover .fa-linkedin {
+    color: #004182;
+}
+
+.microsoft-icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .socials a {
+        font-size: 20px; /* Reduce size on tablets */
+        margin: 0 8px;
+    }
+
+    .microsoft-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .socials {
+        flex-direction: column;
+        gap: 10px; /* Increase spacing for smaller screens */
+    }
+
+    .socials a {
+        font-size: 18px; /* Reduce size further on small screens */
+        margin: 0;
+    }
+
+    .microsoft-icon {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    text-align: center;
+    width: fit-content;
+    margin: 2em auto 0 auto;
+    padding-bottom: 2em;
+}
+
+.footer span {
+    font-size: 1.3em;
+    width: 100vw;
+}
+
+.bottom {
+    background: linear-gradient(180deg, rgba(92, 45, 145, 0) 0%, #0E0E0E 80.21%);
+}
+
+
+.faq1 {
+    width: 82vw;
+    border-radius: 0.5em;
+    /* font-size: 2.3em; */
+    font-size: 2em;
+    text-align: left;
+    padding-left: 1em;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ques {
+    background: white;
+    min-height: 7vh;
+    display: block;
+    margin-top: 1em;
+    transition: transform 0.2s ease-in;
+}
+
+.ques:hover {
+    box-shadow: black -10px 4px -2px 0;
+}
+
+.quesbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quesbar span {
+    font-weight: 500;
+}
+
+.faqHead {
+    margin-top: 2em;
+    margin-bottom: 8vh;
+    font-size: 5em;
+}
+
+.answer {
+    padding: .375rem .75rem;
+    padding-left: 1em;
+    min-height: 12vh;
+    background: #c8cdd5;
+}
+
+.cards_2 {
+    display: none;
+}

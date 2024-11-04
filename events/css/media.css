@@ -1,0 +1,45 @@
+@media screen and (max-width: 450px) {
+    html {
+      font-size: 4px;
+    }
+    
+    .header {
+      height: 7vh;
+    }
+
+    .logo img{
+      width: 46vw;
+    }
+
+    .links {
+      margin-bottom: 0vh;
+    }
+
+    .links li a {
+      height: 2em;
+      font-size: 2em;
+      width: 12vw;
+    }
+  
+    .links li a:hover {
+      transform: translateY(0);
+      color: black;
+    }
+
+    .footer {
+      font-size: 4px;
+    }
+    
+    .bottom-1{
+      font-size: 4px;
+      padding-top: 1em;
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
+    }
+
+    .handles{
+      justify-content: center;
+    }
+
+  }
